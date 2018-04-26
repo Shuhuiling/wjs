@@ -1,0 +1,458 @@
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+@font-face {
+    font-family: 'weijinsuo';
+    src: url(../font/MiFie-Web-Font.svg) format('svg'),
+    url(../font/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../font/MiFie-Web-Font.ttf) format('truetype'),
+    url(../font/MiFie-Web-Font.woff) format('woff');
+
+}
+
+[class^="icon-"],[class*=" icon-"] {
+    font-family: 'weijinsuo';
+    font-style: normal;
+}
+
+
+
+
+/*
+    头部区域开始
+ */
+
+#header {
+    /*height: 200px;*/
+}
+
+#header > .topbar {
+    height: 50px;
+    border-bottom: 1px solid #c0c0c0;
+    line-height: 50px;
+}
+
+/*#header > .topbar > .container {*/
+/*background-color: #3c3c3c;*/
+/*height: 50px;*/
+/*}*/
+
+/*#header > .topbar > .container > .row > div {*/
+/*background-color: #f40;*/
+/*height: 50px;*/
+/*}*/
+/*#header > .topbar > .container > .row > div:nth-of-type(2n) {*/
+/*background-color: #28a4c9;*/
+/*height: 50px;*/
+/*}*/
+
+
+
+
+#header .mobile-link img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 33px;
+    z-index:  1002;
+}
+#header .mobile-link:hover {
+    text-decoration: none;
+}
+#header .mobile-link:hover > img {
+    display: block;
+}
+
+#header .container .row .col-md-2 a {
+    font-size: 12px;
+    color: #888;
+}
+#header > .topbar > .container > .row > div {
+    height: 50px;
+    font-size: 12px;
+    color: #888;
+}
+#header > .topbar > .container  > .row > div ~ div {
+    border-left: 1px solid #c0c0c0;
+}
+
+#header .container .row .col-md-3 .btn-link {
+    font-size: 14px;
+    color: #888;
+}
+
+#header .icon-icon {color: #E9232C;font-size: 60px;line-height: 60px;vertical-align:  middle;}
+#header .icon-logo {color: #333;font-size: 45px;x;line-height: 60px;vertical-align:  middle;}
+
+/*
+    中间部分开始了
+ */
+
+/*section {*/
+    /*height: 200px;*/
+    /*background-color: #ffff00;*/
+/*}*/
+/*section:nth-of-type(2n) {*/
+    /*background-color: #f4f4f4;*/
+/*}*/
+
+/*
+    广告轮播部分
+*/
+#main_ad > .carousel-inner > .item {
+    /*height: 410px;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/*#main_ad > .carousel-inner > .item {*/
+    /*height: 460px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-size: cover;*/
+/*}*/
+
+    /*什么时候不能用410px高度*/
+    /*可以通过媒体查询的方式控制*/
+@media (min-width: 768px) {
+    /*当屏幕宽度大于768的时候，才执行*/
+    #main_ad > .carousel-inner > .item {
+        height: 410px;
+    }
+}
+#main_ad > .carousel-inner > .item img {
+    width: 100%;
+}
+
+/*
+    特色部分
+*/
+#tese {
+    margin: 40px 0;
+}
+/*#tese .row div {*/
+    /*height: 50px;*/
+    /*margin-bottom: 20px;*/
+    /*background-color: #ff4400;*/
+/*}*/
+/*#tese .row div:nth-of-type(2n){*/
+    /*background-color: #ffff00;*/
+/*}*/
+#tese > .container > .row > div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#tese i {
+    font-size: 34px;
+}
+
+/*
+    立即预约
+ */
+#ljyy {
+    border-top: 1px solid #c0c0c0;
+    padding: 20px 0;
+}
+#ljyy > .container > .pull-left > span,
+#ljyy > .container > .pull-left > a{
+    color: #e92322;
+}
+#ljyy > .container > .pull-left > a:hover {
+    text-decoration: none;
+}
+#ljyy > .container > .pull-left > a {
+    border-bottom: 1px dashed #e92322;
+}
+
+/*
+    产品推荐
+*/
+#products {
+    border-top: 1px solid #c0c0c0;
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+#products > .container > .nav-tabs {
+     padding-left: 20px;
+}
+#products > .container > .nav > li > a{
+    font-size: 16px;
+    color: #333;
+
+}
+#products > .container > .nav > li > a:hover{
+}
+#products > .container > .nav > li.active a {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #e92322;
+}
+#products > .container > .nav > li.active a:hover {
+}
+
+/*
+    选项栏内容
+*/
+.panel-test.disabled p {
+    color: #777;
+}
+.panel-test.disabled {
+    background-color: #f0f0f0;
+}
+/*
+    脚注部分
+ */
+footer {
+    height: 200px;
+    background-color: #3c3c3c;
+}
+
+
+.icon-mobilephone:before {
+    content: "\e908";
+    font-size: 13px;
+}
+.icon-telephone:before {
+    content: "\e909";
+    font-size: 15px;
+}
+.icon-icon:before {
+    content: "\e920";
+}
+.icon-logo:before {
+    content: "\e93e";
+}
+.icon-uniE907:before {
+    content: "\e907";
+}
+.icon-uniE906:before {
+    content: "\e906";
+    font-size: 18px;
+}
+.icon-uniE905:before {
+    content: "\e905";
+    font-size: 18px;
+
+}
+/*
+    覆盖原来的navbar-default,进行一些修改
+ */
+.navbar-test {
+    background-color: transparent;
+    border-color: #e7e7e7;
+    margin-bottom: 0;
+}
+.navbar-test .navbar-brand {
+    color: #777;
+    height: 85px;
+}
+.navbar-test .navbar-brand:hover,
+.navbar-test .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-test .navbar-text {
+    color: #777;
+}
+.navbar-test .navbar-nav > li > a {
+    color: #777;
+    line-height:  60px;
+    font-size:  18px;
+}
+.navbar-test .navbar-nav > li > a:hover,
+.navbar-test .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom:  2px solid #E9232C;
+}
+.navbar-test .navbar-nav > .active > a,
+.navbar-test .navbar-nav > .active > a:hover,
+.navbar-test .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+    border-bottom: 2px solid #E9232C;
+}
+.navbar-test .navbar-nav > .disabled > a,
+.navbar-test .navbar-nav > .disabled > a:hover,
+.navbar-test .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-test .navbar-toggle {
+    border-color: #ddd;
+    margin-top:  23px;
+    margin-bottom:  23px;
+}
+.navbar-test .navbar-toggle:hover,
+.navbar-test .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-test .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-test .navbar-collapse,
+.navbar-test .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-test .navbar-nav > .open > a,
+.navbar-test .navbar-nav > .open > a:hover,
+.navbar-test .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-test .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-test .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-test .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-test .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-test .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-test .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-test .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-test .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-test .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-test .navbar-link {
+    color: #777;
+}
+.navbar-test .navbar-link:hover {
+    color: #333;
+}
+.navbar-test .btn-link {
+    color: #777;
+}
+.navbar-test .btn-link:hover,
+.navbar-test .btn-link:focus {
+    color: #333;
+}
+.navbar-test .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-test .btn-link:hover,
+.navbar-test .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-test .btn-link:focus {
+    color: #ccc;
+}
+/*控制面板*/
+.panel-test {
+    border: none;
+    margin-top: 10px;
+    border-radius: 0;
+    box-shadow: 1px 1px 5px #ccc;
+    color: #f0f0f0;
+}
+.panel-test.actived {
+    background-color: #e92322;
+    /* position: relative; */
+}
+.panel-test.disabled {
+    background-color: #ffffff;
+}
+.panel-test.actived::before {
+    content: "\e915";
+    font-family: weijinsuo;
+    font-size: 50px;
+    position: absolute;
+    top: -1px;
+    left: 14px;
+}
+.panel-test .panel-body p {
+    margin-bottom: 0;
+}
+.panel-test > .panel-heading {
+    /*color: #333;*/
+    float: right;
+    height: 160px;
+    width: 120px;
+    border-left: 1px dashed #c0c0c0;
+    position: relative;
+    text-align: center;
+    padding: 45px 0;
+}
+.panel-test > .panel-heading > p {
+    margin-bottom: 0;
+}
+.panel-test > .panel-heading > p > strong {
+    font-size: 35px;
+    font-weight: bold;
+}
+.panel-test > .panel-heading > .head-tooltip {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 26px;
+}
+.panel-test > .panel-heading > .head-tooltip > .pane {
+
+    /*border: 1px solid  #e92322;*/
+    /*padding: 3px;*/
+    /*margin: 2px;*/
+}
+.panel-test > .panel-heading > .head-tooltip > .pane-one {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #e92322;
+    border: 1px solid #e92322;
+    margin: 2px;
+}
+.panel-test > .panel-heading > .head-tooltip > .pane-one:hover {
+    text-decoration: none;
+}
+.panel-test > .panel-heading > .head-tooltip > .pane-two {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #399;
+    border: 1px solid #399;
+    margin: 2px;
+}
+.panel-test > .panel-heading > .head-tooltip > .pane-two:hover {
+    text-decoration: none;
+}
+
+.panel-test > .panel-body {
+    height: 160px;
+    padding: 15px;
+    margin-right:  120px;
+}
+
+.panel-test > .panel-heading::before,
+.panel-test > .panel-heading::after {
+    content: ' ';
+    height: 16px;
+    width: 16px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: absolute;
+}
+.panel-test > .panel-heading::before {
+    top: -8px;
+    left: -8px;
+}
+.panel-test > .panel-heading::after {
+    bottom: -8px;
+    left: -8px;
+    box-shadow: 0 2px 1px #ccc inset;
+}
+.panel-test > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-test > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+.panel-test > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ddd;
+}
